@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Link, Navigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import HomeScreen from './screens/HomeScreen';
@@ -98,7 +98,7 @@ function App() {
               ></Route>
               <Route path="/payment" element={<PaymentMethodScreen />}></Route>
               <Route path="/order/:id" element={<OrderScreen />}></Route>
-              <Route path="/order/:id" element={<OrderScreen />}></Route>
+              <Route path="/placeorder" element={<PlaceOrderScreen />}></Route>
               <Route
                 path="/orderhistory"
                 element={<OrderHistoryScreen />}
