@@ -15,7 +15,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
-  cors({ origin: ['http://localhost:3000', 'https://ember-flip-flops.com'] })
+  cors({
+    origin: ['http://localhost:3000', 'https://ember-flip-flops-mern.com'],
+  })
 );
 
 app.get('/api/keys/paypal', (req, res) => {
